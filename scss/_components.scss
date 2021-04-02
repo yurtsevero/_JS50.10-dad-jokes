@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 500px;
+  width: 50vw;
+  height: 300px;
+  background-color: $color-2;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.joke {
+  &__title {
+    color: #fff;
+  }
+  &__desc {
+    color: $color-5;
+  }
+  &__button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: $color-5;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 5px 10px 15px rgba($color: $color-4, $alpha: 0.5);
+  }
+}

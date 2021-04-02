@@ -1,0 +1,41 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #264653;
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  :visited {
+    text-decoration: none;
+  }
+}
